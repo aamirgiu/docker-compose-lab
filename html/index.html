@@ -1,31 +1,198 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Docker Compose Test</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Aamir Sajjad - Junior Scientist & DevOps Engineer</title>
     <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            background: #0f3460;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
             color: white;
-            font-family: Arial;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .header {
             text-align: center;
-            padding: 50px;
+            margin-bottom: 40px;
         }
-        h1 { color: #00d2ff; }
-        .box {
-            background: #16213e;
-            padding: 20px;
-            border-radius: 10px;
-            margin: 20px;
+        .header h1 {
+            font-size: 42px;
+            background: linear-gradient(90deg, #00d2ff, #3a7bd5);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 10px;
         }
+        .header p {
+            color: #8892b0;
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+        .status {
+            display: inline-block;
+            background: #00ff88;
+            color: #0a0a0a;
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-weight: bold;
+            margin-top: 15px;
+            font-size: 14px;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 20px;
+            backdrop-filter: blur(10px);
+        }
+        .card h2 {
+            color: #00d2ff;
+            margin-bottom: 15px;
+            font-size: 22px;
+        }
+        .card p {
+            color: #ccd6f6;
+            line-height: 1.8;
+            margin: 8px 0;
+        }
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        .skill {
+            background: linear-gradient(90deg, #00d2ff, #3a7bd5);
+            padding: 8px 18px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 600;
+        }
+        .skill-science {
+            background: linear-gradient(90deg, #ff6b6b, #feca57);
+        }
+        .info-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .info-row:last-child { border-bottom: none; }
+        .info-label { color: #8892b0; }
+        .info-value { color: #00ff88; font-weight: bold; }
+        .footer {
+            text-align: center;
+            color: #8892b0;
+            margin-top: 40px;
+            font-size: 14px;
+        }
+        .footer a { color: #00d2ff; text-decoration: none; }
     </style>
 </head>
 <body>
+
     <h1>🚀 AWS Auto-Deploy Working!</h1>
 <p style="color: #00ff88; font-size: 18px;">✅ Auto-Deployed via GitHub Actions</p>
     <div class="box">
         <p>Ye website Nginx container se aa rahi hai</p>
         <p>Database PostgreSQL container mein chal raha hai</p>
         <p>Dono ek saath manage ho rahe hain!</p>
+
+    <div class="container">
+        
+        <div class="header">
+            <h1>Muhammad Aamir Sajjad</h1>
+            <p>Junior Scientist</p>
+            <p>DevOps Engineer</p>
+            <div class="status">LIVE ON AWS CLOUD</div>
+        </div>
+
+        <div class="card">
+            <h2>About Me</h2>
+            <p>Junior Scientist with a passion for DevOps and Cloud Computing.</p>
+            <p>Focused on building scalable, automated infrastructure and CI/CD pipelines.</p>
+            <p>Continuously learning and applying modern DevOps practices.</p>
+        </div>
+
+        <div class="card">
+            <h2>Deployment Information</h2>
+            <div class="info-row">
+                <span class="info-label">Server IP:</span>
+                <span class="info-value">54.79.7.251</span>
+            </div>
+            <div class="info-row">
+                <span class="info-label">Cloud Provider:</span>
+                <span class="info-value">AWS EC2</span>
+            </div>
+            <div class="info-row">
+                <span class="info-label">Region:</span>
+                <span class="info-value">Sydney (ap-southeast-2)</span>
+            </div>
+            <div class="info-row">
+                <span class="info-label">Instance Type:</span>
+                <span class="info-value">t3.micro (Free Tier)</span>
+            </div>
+            <div class="info-row">
+                <span class="info-label">OS:</span>
+                <span class="info-value">Amazon Linux 2023</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>DevOps Skills</h2>
+            <div class="skills">
+                <span class="skill">Linux</span>
+                <span class="skill">Bash</span>
+                <span class="skill">Git</span>
+                <span class="skill">GitHub</span>
+                <span class="skill">Docker</span>
+                <span class="skill">Docker Compose</span>
+                <span class="skill">Kubernetes</span>
+                <span class="skill">Terraform</span>
+                <span class="skill">GitHub Actions</span>
+                <span class="skill">AWS EC2</span>
+                <span class="skill">Nginx</span>
+                <span class="skill">PostgreSQL</span>
+                <span class="skill">CI/CD</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Scientific Background</h2>
+            <div class="skills">
+                <span class="skill skill-science">Research</span>
+                <span class="skill skill-science">Data Analysis</span>
+                <span class="skill skill-science">Problem Solving</span>
+                <span class="skill skill-science">Scientific Computing</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>About This Deployment</h2>
+            <p>This website is running inside a Docker container on AWS EC2.</p>
+            <p>The application is built with:</p>
+            <p>&#8226; Nginx web server (Docker container)</p>
+            <p>&#8226; PostgreSQL database (Docker container)</p>
+            <p>&#8226; Docker Compose for orchestration</p>
+            <p>&#8226; Deployed via Git clone from GitHub</p>
+        </div>
+
+        <div class="card">
+            <h2>Connect With Me</h2>
+            <p>GitHub: <a href="https://github.com/aamirgiu" style="color: #00d2ff;">github.com/aamirgiu</a></p>
+            <p>Project: <a href="https://github.com/aamirgiu/docker-compose-lab" style="color: #00d2ff;">docker-compose-lab</a></p>
+        </div>
+
+        <div class="footer">
+            <p>Deployed with Docker | Powered by AWS | &copy; 2026</p>
+        </div>
+
     </div>
 </body>
 </html>
